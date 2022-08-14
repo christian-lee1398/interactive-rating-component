@@ -7,7 +7,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20em;
+    margin-top: 15em;
 }
 .thanks-container{
     display: flex;
@@ -15,7 +15,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20em;
+    margin-top: 15em;
 }
 .rating-card{
     display: flex;
@@ -140,4 +140,35 @@ input:checked + label{
 
 .hidden{
     display: none;
+}
+
+@media screen and (max-width: 500px){
+    .rating-card, .thanks-main{
+        width: 400px;
+        height: 400px;
+    }
+    .rating-main svg{
+        padding: 13px;
+        margin: 20px 0px 0px 0px;
+    }
+    p{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .rating-card, .thanks-main{
+        width: 350px;
+        height: 375px;
+    }
+    .rating-main svg{
+        padding: 13px;
+        margin: 20px 0px 0px -10px;
+    }
+    p{
+        margin: 0;
+    }
+    button{
+        margin: 10px 0 10px 0;
+    }
 }
